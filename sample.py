@@ -78,18 +78,6 @@ def str2():
        reading_score = st.slider("Reading Score", 0, 100, 50)
        writing_score = st.slider("Writing Score", 0, 100, 50)
        model_type = st.selectbox("Select Model", ["Linear Regression", "Random Forest","Hybrid"])
-       data = {
-              "Gender": [gender],
-              "Race/Ethnicity": [race_ethnicity],
-              "Parental level of education": [parental_education],
-              "Lunch": [lunch],
-              "Test preparation course": [test_prep_course],
-              "Math score": [math_score],
-              "Reading score": [reading_score],
-              "Writing score": [writing_score]
-        }
-       features = pd.DataFrame(data)
-       st.write(features)
        a=(reading_score+writing_score+math_score)/3
        if st.button("Predict"):
                 if a > 70:
