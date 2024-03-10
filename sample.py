@@ -67,7 +67,6 @@ def view_all_users():
 
 def str2():
        st.title("Student Performance Prediction")
-        # Load the data
        
        gender = st.selectbox("Gender", ["Male", "Female"])
        race_ethnicity = st.selectbox("Race/Ethnicity", ["Group A", "Group B", "Group C", "Group D", "Group E"])
